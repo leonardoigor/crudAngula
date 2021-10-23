@@ -10,11 +10,11 @@ services:
       - ./Web/app/:/app
     ports:
       - 5000:4200
-  # api:
-  #   build:
-  #     context: ./Api/Api
-  #   volumes:
-  #     - ./Api/Api:/dotnet_volume
-  #   tty: true
-  #   ports:
-  #     - "5001:5001"
+  api:
+    build:
+      context: ./Api/Api
+    volumes:
+      - ./Api/Api:/dotnet_volume
+    tty: true
+    ports:
+      - "5001:5001"
