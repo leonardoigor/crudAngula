@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  api:
+    build:
+      context: ./ApiTesting
+    volumes:
+      - ./ApiTesting:/dotnet_volume
+    tty: true
+    ports:
+      - "5001:5001"
