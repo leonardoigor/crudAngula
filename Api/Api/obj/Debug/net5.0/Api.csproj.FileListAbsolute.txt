@@ -22,7 +22,6 @@
 /dotnet_volume/obj/Debug/net5.0/staticwebassets/Api.StaticWebAssets.xml
 /dotnet_volume/obj/Debug/net5.0/scopedcss/bundle/Api.styles.css
 /dotnet_volume/obj/Debug/net5.0/Api.RazorTargetAssemblyInfo.cache
-/dotnet_volume/obj/Debug/net5.0/Api.csproj.CopyComplete
 /dotnet_volume/obj/Debug/net5.0/Api.dll
 /dotnet_volume/obj/Debug/net5.0/ref/Api.dll
 /dotnet_volume/obj/Debug/net5.0/Api.pdb
