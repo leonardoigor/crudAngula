@@ -1,6 +1,8 @@
 <nav>
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo">Logo</a>
+    <a routerLink="{{ globa?.url || '' }}" class="brand-logo">{{
+      globa?.title || "..."
+    }}</a>
     <span
       (click)="menuButtonCkick(true)"
       data-target="mobile-nav"

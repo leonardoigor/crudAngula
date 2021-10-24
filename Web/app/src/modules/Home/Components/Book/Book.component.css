@@ -1,0 +1,23 @@
+.iconlist {
+  display: flex;
+}
+
+.iconlist li {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.iconlist li i {
+  color: gray;
+  font-size: 20px;
+}
+.card {
+  background: #141414;
+}
+.iconActive {
+  border: 2px solid #ffc107;
+}
