@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Routes } from 'src/domain/entities/Routes';
+import { RoutesEntity } from 'src/domain/entities/RoutesEntity';
 
 @Component({
   selector: 'app-NavBar',
@@ -7,7 +7,7 @@ import { Routes } from 'src/domain/entities/Routes';
   styleUrls: ['./NavBar.component.css'],
 })
 export class NavBarComponent implements OnInit {
-  Routes: Routes[] = [Routes.instance('Inicio', 'home')];
+  Routes: RoutesEntity[] = [RoutesEntity.instance('Inicio', 'home')];
 
   btnClicked: boolean = true;
 
@@ -17,10 +17,12 @@ export class NavBarComponent implements OnInit {
     if (btn) {
       if (this.btnClicked && active) {
         btn!.style.transform = 'translateX(0%)';
+        this.btnClicked = true;
       } else {
         btn!.style.transform = 'translateX(-105%)';
+        this.btnClicked = false;
       }
-      this.btnClicked = !this.btnClicked;
+      this.btnClicked = true;
     }
   }
 

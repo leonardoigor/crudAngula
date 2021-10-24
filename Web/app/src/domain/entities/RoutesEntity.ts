@@ -1,4 +1,4 @@
-export class Routes {
+export class RoutesEntity {
   private _name: string | undefined;
   private _link: string | undefined;
 
@@ -20,5 +20,6 @@ export class Routes {
     this._name = value;
   }
 
-  static instance = (name: string, link: string) => new Routes(name, link);
+  static instance = (name: string, link: string) =>
+    new RoutesEntity(name, link);
 }
